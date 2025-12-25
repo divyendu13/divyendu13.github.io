@@ -103,7 +103,10 @@ img{max-width:100%;display:block}
 .name{font-size:36px;margin:0;line-height:1.02}
 .highlight{color:var(--accent);text-transform:lowercase}
 .subheading{color:var(--muted);margin:10px 0 18px}
-.lead{color:#d6e0ea;max-width:70ch;line-height:1.6;text-align:justify}
+.lead{color:#d6e0ea;line-height:1.6;text-align:justify}
+
+/* Experience section paragraphs */
+.resume-content p{text-align:justify}
 
 /* Resume button */
 .resume-btn{
@@ -180,8 +183,16 @@ ul.list-inline{display:flex;flex-wrap:wrap;gap:12px;padding:0;list-style:none}
     overflow:visible;
     border-right:none;
     border-bottom:1px solid rgba(255,255,255,0.03);
-    background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    background:linear-gradient(180deg, rgba(7,16,33,0.95), rgba(7,17,27,0.98));
+    -webkit-backdrop-filter:blur(10px);
     backdrop-filter:blur(10px);
+  }
+  
+  /* Fallback for browsers that don't support backdrop-filter */
+  @supports not (backdrop-filter: blur(10px)) {
+    #sideNav{
+      background:linear-gradient(180deg, rgba(7,16,33,0.98), rgba(7,17,27,0.99));
+    }
   }
 
   .brand{width:70px;flex:0 0 70px}
