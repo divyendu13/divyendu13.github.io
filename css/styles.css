@@ -104,6 +104,14 @@ img{max-width:100%;display:block}
 .highlight{color:var(--accent);text-transform:lowercase}
 .subheading{color:var(--muted);margin:10px 0 18px}
 .lead{color:#d6e0ea;line-height:1.6;text-align:justify}
+.section-intro{color:var(--muted);margin:-6px 0 22px;line-height:1.6}
+.writing-list{display:grid;gap:16px}
+.writing-item{padding:20px 22px;border:1px solid rgba(255,255,255,0.07);border-radius:10px;background:var(--glass)}
+.writing-image{width:100%;max-height:300px;object-fit:cover;object-position:top;border-radius:7px;margin:0 0 18px;border:1px solid rgba(255,255,255,0.08)}
+.writing-item h3{margin:0 0 10px;font-size:21px;line-height:1.25}
+.writing-item h3 a{color:#e6eef6}
+.writing-item h3 a:hover,.writing-item h3 a:focus-visible{color:var(--accent)}
+.writing-item p{margin:0;color:#c8d4df;line-height:1.65;text-align:justify}
 
 /* Experience section paragraphs */
 .resume-content p{text-align:justify}
